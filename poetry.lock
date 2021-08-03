@@ -178,7 +178,7 @@ version = "0.17.4"
 description = "Send Sir Perceval on a quest to fetch and gather data from software repositories."
 category = "main"
 optional = false
-python-versions = "^3.6"
+python-versions = "^3.6.1"
 develop = false
 
 [package.dependencies]
@@ -196,7 +196,7 @@ urllib3 = "^1.22"
 type = "git"
 url = "https://github.com/chaoss/grimoirelab-perceval.git"
 reference = "master"
-resolved_reference = "8fd7bea116f1d44893d41d2d40e3b70e579df155"
+resolved_reference = "0d3d0b43c8ea9cd6e657eef38191b4276ed09d6b"
 
 [[package]]
 name = "pycodestyle"
@@ -315,8 +315,8 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.6"
-content-hash = "b8e1a796a0008283267210a9f6d92fac2d8e967398166a16918f8fe69ead837a"
+python-versions = "^3.6.1"
+content-hash = "454d1ceb6932a444ac67d993e6f91e78ca5c1d5103fac7f2e06bbaec345cc06a"
 
 [metadata.files]
 beautifulsoup4 = [

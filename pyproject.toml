@@ -35,7 +35,7 @@ classifiers = [
 "Bug Tracker" = "https://github.com/vchrombie/grimoirelab-perceval-zulip/issues"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.6.1"
 
 requests = "^2.7.0"
 grimoirelab-toolkit = {git = "https://github.com/chaoss/grimoirelab-toolkit.git", rev = "master"}
