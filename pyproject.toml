@@ -38,13 +38,20 @@ classifiers = [
 python = "^3.6.1"
 
 requests = "^2.7.0"
-grimoirelab-toolkit = {git = "https://github.com/chaoss/grimoirelab-toolkit.git", rev = "master"}
-perceval = {git = "https://github.com/chaoss/grimoirelab-perceval.git", rev = "master"}
+
+# grimoirelab dependencies
+grimoirelab-toolkit = "*"
+perceval = "*"
 
 [tool.poetry.dev-dependencies]
 httpretty = "1.0.2"
+
 flake8 = "^3.9.2"
 coverage = "^5.5"
+
+# grimoirelab dependencies
+grimoirelab-toolkit = {git = "https://github.com/chaoss/grimoirelab-toolkit.git", rev = "master"}
+perceval = {git = "https://github.com/chaoss/grimoirelab-perceval.git", rev = "master"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
