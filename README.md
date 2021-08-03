@@ -10,14 +10,21 @@ The backends currently managed by this package support the next repositories:
 
 ## Requirements
 
-* Python >= 3.6
+* Python >= 3.6.1
 * python3-requests >= 2.7
 * grimoirelab-toolkit >= 0.2
 * perceval >= 0.17.4
 
 ## Installation
 
-### Getting the source code
+### 1. PyPI
+
+Perceval Zulip backend can be installed using [pip](https://pip.pypa.io/en/stable/)
+```
+$ pip install perceval-zulip
+```
+
+### 2. Getting the source code
 
 Clone the repository
 ```
