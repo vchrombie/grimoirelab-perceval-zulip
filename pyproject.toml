@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "perceval-zulip"
+version = "0.1.0"
+description = "Bundle of Perceval backends for Zulip."
+authors = [
+    "GrimoireLab Developers"
+]
+license = "GPL-3.0+"
+
+readme = "README.md"
+
+homepage = "https://chaoss.github.io/grimoirelab/"
+repository = "https://github.com/vchrombie/grimoirelab-perceval-zulip"
+
+keywords = [
+    "development",
+    "grimoirelab"
+]
+
+packages = [
+    { include = "perceval" },
+    { include = "tests", format = "sdist" },
+]
+
+classifiers = [
+   "Development Status :: 4 - Beta",
+   "Intended Audience :: Developers",
+   "Intended Audience :: Science/Research",
+   "Topic :: Software Development",
+   "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+   "Programming Language :: Python :: 3"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/vchrombie/grimoirelab-perceval-zulip/issues"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+requests = "^2.7.0"
+grimoirelab-toolkit = {git = "https://github.com/chaoss/grimoirelab-toolkit.git", rev = "master"}
+perceval = {git = "https://github.com/chaoss/grimoirelab-perceval.git", rev = "master"}
+
+[tool.poetry.dev-dependencies]
+httpretty = "1.0.2"
+flake8 = "^3.9.2"
+coverage = "^5.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
