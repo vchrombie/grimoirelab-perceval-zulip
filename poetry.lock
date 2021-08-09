@@ -196,7 +196,7 @@ urllib3 = "^1.22"
 type = "git"
 url = "https://github.com/chaoss/grimoirelab-perceval.git"
 reference = "master"
-resolved_reference = "0d3d0b43c8ea9cd6e657eef38191b4276ed09d6b"
+resolved_reference = "46a9405cfef0c23929a0178dd75725acb8dda693"
 
 [[package]]
 name = "pycodestyle"

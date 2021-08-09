@@ -1,12 +1,6 @@
 # perceval-zulip [![Build Status](https://github.com/vchrombie/grimoirelab-perceval-zulip/workflows/tests/badge.svg)](https://github.com/vchrombie/grimoirelab-perceval-zulip/actions?query=workflow:tests+branch:master+event:push) [![Coverage Status](https://img.shields.io/coveralls/vchrombie/grimoirelab-perceval-zulip.svg)](https://coveralls.io/r/vchrombie/grimoirelab-perceval-zulip?branch=master) [![PyPI version](https://badge.fury.io/py/perceval-zulip.svg)](https://badge.fury.io/py/perceval-zulip)
 
-Bundle of Perceval backends for Zulip.
-
-## Backends
-
-The backends currently managed by this package support the next repositories:
-
-* Zulip
+Perceval backend for Zulip.
 
 ## Requirements
 
@@ -51,8 +45,6 @@ $ poetry shell
 ```
 
 ## Examples
-
-### Zulip
 
 **Note:** You need the `email` and the `api_token` from the server. You can create a bot and use it for the authentication,
 please read the docs at [About bots (Zulip Help Center)](https://zulip.com/help/bots-and-integrations).
