@@ -1,4 +1,5 @@
-# perceval-zulip [![Build Status](https://github.com/vchrombie/grimoirelab-perceval-zulip/workflows/tests/badge.svg)](https://github.com/vchrombie/grimoirelab-perceval-zulip/actions?query=workflow:tests+branch:master+event:push) [![Coverage Status](https://img.shields.io/coveralls/vchrombie/grimoirelab-perceval-zulip.svg)](https://coveralls.io/r/vchrombie/grimoirelab-perceval-zulip?branch=master) [![PyPI version](https://badge.fury.io/py/perceval-zulip.svg)](https://badge.fury.io/py/perceval-zulip)
+# perceval-zulip
+[![Build Status](https://github.com/vchrombie/grimoirelab-perceval-zulip/workflows/tests/badge.svg)](https://github.com/vchrombie/grimoirelab-perceval-zulip/actions?query=workflow:tests+branch:master+event:push) [![Coverage Status](https://img.shields.io/coveralls/vchrombie/grimoirelab-perceval-zulip.svg)](https://coveralls.io/r/vchrombie/grimoirelab-perceval-zulip?branch=master) [![PyPI version](https://badge.fury.io/py/perceval-zulip.svg)](https://badge.fury.io/py/perceval-zulip)
 
 Perceval backend for Zulip.
 
