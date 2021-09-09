@@ -22,6 +22,13 @@ packages = [
     { include = "tests", format = "sdist" },
 ]
 
+include = [
+    "AUTHORS",
+    "LICENSE",
+    "NEWS",
+    "README.md"
+]
+
 classifiers = [
    "Development Status :: 4 - Beta",
    "Intended Audience :: Developers",
