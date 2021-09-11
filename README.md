@@ -33,7 +33,7 @@ $ git clone https://github.com/vchrombie/grimoirelab-perceval-zulip
 We use [Poetry](https://python-poetry.org/docs/) for managing the project.
 You can install it following [these steps](https://python-poetry.org/docs/#installation).
 
-### Installation and configuration
+### Setup
 
 Install the required dependencies (this will also create a virtual environment)
 ```
@@ -45,10 +45,32 @@ Activate the virtual environment
 $ poetry shell
 ```
 
-## Examples
+## Usage
 
 **Note:** You need the `email` and the `api_token` from the server. You can create a bot and use it for the authentication,
 please read the docs at [About bots (Zulip Help Center)](https://zulip.com/help/bots-and-integrations).
+```
+$ perceval zulip --help
+[2021-09-11 12:50:28,594] - Sir Perceval is on his quest.
+usage: perceval [-h] [--category CATEGORY] [--tag TAG] [--filter-classified] -t API_TOKEN
+                [--archive-path ARCHIVE_PATH] [--no-archive] [--fetch-archive]
+                [--archived-since ARCHIVED_SINCE] [--no-ssl-verify] [-o OUTFILE]
+                [--json-line] [-e EMAIL]
+                url stream
+
+positional arguments:
+  url                   Zulip chat URL
+  stream                Zulip chat stream name
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e EMAIL, --email EMAIL
+                        Zulip bot email
+
+authentication arguments:
+  -t API_TOKEN, --api-token API_TOKEN
+                        backend authentication token / API key
+```
 
 Fetch messages from the `importlib` stream of the [Python Zulip Server](https://python.zulipchat.com)
 ```
@@ -59,6 +81,10 @@ $ perceval zulip https://python.zulipchat.com importlib -e bot@zulipchat.com -t 
 
 This project follows the [contributing guidelines](https://github.com/chaoss/grimoirelab/blob/master/CONTRIBUTING.md)
 of the GrimoireLab.
+
+## Acknowledgment
+
+The backend was initially developed by [@vchrombie](https://github.com/vchrombie).
 
 Adhering to the guidelines, the work is started in this external repository. But, this can be merged
 ([chaoss/grimoirelab-perceval/#/667](https://github.com/chaoss/grimoirelab-perceval/pull/667)) into the 
