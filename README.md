@@ -47,15 +47,17 @@ $ poetry shell
 
 ## Usage
 
-**Note:** You need the `email` and the `api_token` from the server. You can create a bot and use it for the authentication,
-please read the docs at [About bots (Zulip Help Center)](https://zulip.com/help/bots-and-integrations).
+**Note:** You need the `email` and the `api_token` (API key) from the server. You can use the user email and API key
+for authentication or create a bot and use the bot email and API key.
+
+Reference: [About bots (Zulip Help Center)](https://zulip.com/help/bots-and-integrations).
 ```
-$ perceval zulip --help
-[2021-09-11 12:50:28,594] - Sir Perceval is on his quest.
+(.venv) $ perceval zulip --help
+[2021-09-20 15:57:22,523] - Sir Perceval is on his quest.
 usage: perceval [-h] [--category CATEGORY] [--tag TAG] [--filter-classified] -t API_TOKEN
                 [--archive-path ARCHIVE_PATH] [--no-archive] [--fetch-archive]
                 [--archived-since ARCHIVED_SINCE] [--no-ssl-verify] [-o OUTFILE]
-                [--json-line] [-e EMAIL]
+                [--json-line] -e EMAIL
                 url stream
 
 positional arguments:
@@ -64,17 +66,20 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  -e EMAIL, --email EMAIL
-                        Zulip bot email
 
 authentication arguments:
   -t API_TOKEN, --api-token API_TOKEN
                         backend authentication token / API key
+
+zulip arguments:
+  -e EMAIL, --email EMAIL
+                        Zulip bot/user email
 ```
 
-Fetch messages from the `importlib` stream of the [Python Zulip Server](https://python.zulipchat.com)
+Fetch messages from the `importlib` stream of the [Python Zulip Server](https://python.zulipchat.com) with the
+bot email `bot@zulipchat.com` and API key `xxxx`
 ```
-$ perceval zulip https://python.zulipchat.com importlib -e bot@zulipchat.com -t xxxx
+(.venv) $ perceval zulip https://python.zulipchat.com importlib -e bot@zulipchat.com -t xxxx
 ```
 
 ## Contributing
