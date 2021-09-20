@@ -49,14 +49,14 @@ class Zulip(Backend):
 
     :param url: URL of the Zulip chat server
     :param stream: stream from which the messages are to be fetched
-    :param email: bot email
-    :param api_token: key needed to use the API
+    :param email: bot/user email
+    :param api_token: bot/user API key
     :param tag: label used to mark the data
     :param archive: archive to store/retrieve items
     :param ssl_verify: enable/disable SSL verification
     """
 
-    version = '0.1.0'
+    version = '0.1.1'
 
     CATEGORIES = [CATEGORY_MESSAGE]
 
@@ -170,7 +170,7 @@ class Zulip(Backend):
         ts = float(item['timestamp'])
         return ts
 
-    @ staticmethod
+    @staticmethod
     def metadata_category(item):
         """Extracts the category from a Zulip item.
 
@@ -193,8 +193,8 @@ class ZulipClient(HttpClient):
 
     :param url: URL of the Zulip chat server
     :param stream: stream from which the messages are to be fetched
-    :param email: bot email
-    :param api_token: key needed to use the API
+    :param email: bot/user email
+    :param api_token: bot/user API key
     :param archive: archive to store/retrieve items
     :param from_archive: it tells whether to write/read the archive
     :param ssl_verify: enable/disable SSL verification
@@ -245,10 +245,13 @@ class ZulipCommand(BackendCommand):
         action = parser.parser._option_string_actions['--api-token']
         action.required = True
 
-        # # Required arguments
+        # Zulip options
+        group = parser.parser.add_argument_group('zulip arguments')
+        group.add_argument('-e', '--email', dest='email', required=True,
+                           help="Zulip bot/user email")
+
+        # Required arguments
         parser.parser.add_argument('url', help="Zulip chat URL")
         parser.parser.add_argument('stream', help='Zulip chat stream name')
-        parser.parser.add_argument('-e', '--email', dest='email',
-                                   help="Zulip bot email")
 
         return parser
