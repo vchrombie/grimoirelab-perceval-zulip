@@ -63,6 +63,6 @@ perceval = {git = "https://github.com/chaoss/grimoirelab-perceval.git", rev = "m
 [build-system]
 requires = [
     "poetry-core>=1.0.0",
-    "setuptools>=30.3.0,<50"
+    "setuptools<=57.0.0"
 ]
 build-backend = "poetry.core.masonry.api"
