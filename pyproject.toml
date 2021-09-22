@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "perceval-zulip"
-version = "0.1.0"
+version = "0.1.1"
 description = "Perceval backend for Zulip."
 authors = [
     "GrimoireLab Developers"
