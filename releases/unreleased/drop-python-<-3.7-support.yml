@@ -1,8 +1,0 @@
----
-title: Drop Python < 3.7 support
-category: security
-author: Venu Vardhan Reddy Tekula <venu@chaoss.community>
-issue: null
-notes: >
-    Python versions previous to 3.7 ended their security support life
-    in December 2021. This new release drops its support too.
