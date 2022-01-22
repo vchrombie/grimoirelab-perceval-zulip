@@ -23,7 +23,8 @@ $ pip install perceval-zulip
 
 Clone the repository
 ```
-$ git clone https://github.com/vchrombie/grimoirelab-perceval-zulip
+$ git clone https://github.com/vchrombie/grimoirelab-perceval-zulip perceval-zulip
+$ cd perceval-zulip
 ```
 
 ### Prerequisites
