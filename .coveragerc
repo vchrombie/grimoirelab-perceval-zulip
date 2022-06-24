@@ -1,0 +1,6 @@
+[run]
+source = perceval.backends.zulip
+
+[report]
+exclude_lines =
+    __version__ =

@@ -39,6 +39,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          poetry run coverage run --source=perceval.backends.zulip tests/run_tests.py
+          poetry run coverage run tests/run_tests.py
           poetry run coverage report -m
           poetry run coveralls --service=github
