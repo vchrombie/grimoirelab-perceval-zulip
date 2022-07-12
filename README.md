@@ -7,8 +7,8 @@ Perceval backend for Zulip.
 
 * Python >= 3.7
 * python3-requests >= 2.7
-* grimoirelab-toolkit >= 0.2
-* perceval >= 0.17.4
+* grimoirelab-toolkit >= 0.3
+* perceval >= 0.19
 
 ## Installation
 
