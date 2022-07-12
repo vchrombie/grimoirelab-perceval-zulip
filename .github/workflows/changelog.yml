@@ -1,4 +1,4 @@
-name: changelog
+name: check changelog
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - 'perceval/**'
 
 jobs:
-  changelog:
+  check-changelog:
     runs-on: ubuntu-latest
     steps:
       - uses: bitergia/release-tools-check-changelog@master
