@@ -3,12 +3,22 @@
 
 Perceval backend for Zulip.
 
+
 ## Requirements
 
 * Python >= 3.7
 * python3-requests >= 2.7
 * grimoirelab-toolkit >= 0.3
 * perceval >= 0.19
+
+
+## Prerequisites
+
+### Poetry
+
+We use [Poetry](https://python-poetry.org/docs/) for managing the project.
+You can install it following [these steps](https://python-poetry.org/docs/#installation).
+
 
 ## Installation
 
@@ -27,15 +37,6 @@ $ git clone https://github.com/vchrombie/grimoirelab-perceval-zulip perceval-zul
 $ cd perceval-zulip
 ```
 
-### Prerequisites
-
-#### Poetry
-
-We use [Poetry](https://python-poetry.org/docs/) for managing the project.
-You can install it following [these steps](https://python-poetry.org/docs/#installation).
-
-### Setup
-
 Install the required dependencies (this will also create a virtual environment)
 ```
 $ poetry install
@@ -45,6 +46,7 @@ Activate the virtual environment
 ```
 $ poetry shell
 ```
+
 
 ## Usage
 
@@ -86,10 +88,12 @@ bot email `bot@zulipchat.com` and API key `xxxx`
 ...
 ```
 
+
 ## Contributing
 
 This project follows the [contributing guidelines](https://github.com/chaoss/grimoirelab/blob/master/CONTRIBUTING.md)
 of the GrimoireLab.
+
 
 ## Acknowledgment
 
@@ -98,6 +102,7 @@ The backend was initially developed by [@vchrombie](https://github.com/vchrombie
 Adhering to the guidelines, the work is started in this external repository. But, this can be merged
 ([chaoss/grimoirelab-perceval/#/667](https://github.com/chaoss/grimoirelab-perceval/pull/667)) into the 
 [Perceval](https://github.com/chaoss/grimoirelab-perceval) repository in the future.
+
 
 ## License
 
