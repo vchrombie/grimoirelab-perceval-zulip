@@ -25,8 +25,10 @@ You can install it following [these steps](https://python-poetry.org/docs/#insta
 ### 1. PyPI
 
 Perceval Zulip backend can be installed using [pip](https://pip.pypa.io/en/stable/)
+
+It is advised to use a [virtual environment](https://docs.python.org/3/tutorial/venv.html)
 ```
-$ pip install perceval-zulip
+(.venv) $ pip install perceval-zulip
 ```
 
 ### 2. Getting the source code
