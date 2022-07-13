@@ -1,9 +1,0 @@
----
-title: Support package namespaces with Poetry
-category: fixed
-author: null
-issue: null
-notes: >
-    This package was not working with poetry install.
-    Convert this package in a native namespace package
-    as defined by PEP 420.
