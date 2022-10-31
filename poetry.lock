@@ -118,14 +118,14 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "grimoirelab-toolkit"
-version = "0.3.1"
+version = "0.3.2"
 description = "Toolkit of common functions used across GrimoireLab"
 category = "main"
 optional = false
 python-versions = ">=3.7,<4.0"
 
 [package.dependencies]
-python-dateutil = ">=2.8.0,<3.0.0"
+python-dateutil = ">=2.8.2,<3.0.0"
 
 [[package]]
 name = "httpretty"
@@ -502,8 +502,8 @@ flake8 = [
     {file = "flake8-5.0.4.tar.gz", hash = "sha256:6fbe320aad8d6b95cec8b8e47bc933004678dc63095be98528b7bdd2a9f510db"},
 ]
 grimoirelab-toolkit = [
-    {file = "grimoirelab-toolkit-0.3.1.tar.gz", hash = "sha256:de5fbb100cda40145e2acfca407bc872e6a6870ab2c5413504c827d926df7903"},
-    {file = "grimoirelab_toolkit-0.3.1-py3-none-any.whl", hash = "sha256:2e92b6d2ba1dc6819cb65b3b78895c2a186db275b337f1eae60ec2c573380e27"},
+    {file = "grimoirelab_toolkit-0.3.2-py3-none-any.whl", hash = "sha256:02d66bf09e652b6bcbb30a9affaf0ebd6e8d2ad9dec1011796d338df8fbe6734"},
+    {file = "grimoirelab_toolkit-0.3.2.tar.gz", hash = "sha256:d0db09fefafa7e33ba7690503c7aac34b890eea639859af610525af7c635531a"},
 ]
 httpretty = [
     {file = "httpretty-1.1.4.tar.gz", hash = "sha256:20de0e5dd5a18292d36d928cc3d6e52f8b2ac73daec40d41eb62dee154933b68"},
