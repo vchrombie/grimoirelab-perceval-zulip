@@ -169,7 +169,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "perceval"
-version = "0.21.0"
+version = "0.21.1"
 description = "Send Sir Perceval on a quest to fetch and gather data from software repositories."
 category = "main"
 optional = false
@@ -521,8 +521,8 @@ mccabe = [
     {file = "mccabe-0.7.0.tar.gz", hash = "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325"},
 ]
 perceval = [
-    {file = "perceval-0.21.0-py3-none-any.whl", hash = "sha256:00375afb98b13bc3a94e765458380e1a131bb7bb85402f4ec74fcad811b4ecf1"},
-    {file = "perceval-0.21.0.tar.gz", hash = "sha256:b6cf88357342379a36e0db385636dfcdc077903d9657ec43e6dee0003389fe59"},
+    {file = "perceval-0.21.1-py3-none-any.whl", hash = "sha256:f59b009cd094e18d38d9a34ff3d2a7f142a9edda6180989a77dbae4af07f4120"},
+    {file = "perceval-0.21.1.tar.gz", hash = "sha256:980b5e63b18a37eaa41118d88f5ef98056bf9e827c105d8d44952e83add0eb1a"},
 ]
 pycodestyle = [
     {file = "pycodestyle-2.9.0-py2.py3-none-any.whl", hash = "sha256:289cdc0969d589d90752582bef6dff57c5fbc6949ee8b013ad6d6449a8ae9437"},
