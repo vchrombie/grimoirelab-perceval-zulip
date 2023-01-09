@@ -49,7 +49,7 @@ perceval = ">=0.19,<0.22"
 [tool.poetry.dev-dependencies]
 httpretty = "1.1.4"
 flake8 = "^5.0.4"
-coverage = "^6.5"
+coverage = "^7.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
