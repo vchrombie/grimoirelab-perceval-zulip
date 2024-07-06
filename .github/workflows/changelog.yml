@@ -3,7 +3,7 @@ name: check changelog
 on:
   pull_request:
     paths:
-      - 'perceval/**'
+      - "perceval/**"
 
 jobs:
   check-changelog:
