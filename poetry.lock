@@ -417,13 +417,13 @@ pyflakes = ">=2.5.0,<2.6.0"
 
 [[package]]
 name = "grimoirelab-toolkit"
-version = "0.3.6"
+version = "1.0.2"
 description = "Toolkit of common functions used across GrimoireLab"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = "<4.0,>=3.8"
 files = [
-    {file = "grimoirelab_toolkit-0.3.6-py3-none-any.whl", hash = "sha256:e2dc575fae3f9734dee78af74c8555b9ca085040e6aa5dc1088a44a7c448af83"},
-    {file = "grimoirelab_toolkit-0.3.6.tar.gz", hash = "sha256:fb4d26ad988ce5fa77a4742df7c5a149b663894b289ae5444915138692fa0c3b"},
+    {file = "grimoirelab_toolkit-1.0.2-py3-none-any.whl", hash = "sha256:c3fee1ab5dab0c4bcd101d4463546f8e3ec1694cb96e850cf395bf62caffc346"},
+    {file = "grimoirelab_toolkit-1.0.2.tar.gz", hash = "sha256:525bc8c0c5a7f48fc7aa3e779d6ab32228286f75406a5295d9a44dbf1157a24c"},
 ]
 
 [package.dependencies]
@@ -622,4 +622,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "3138ecefe734f819d39baab66dfdda238c22f62052cfa7018296aceabdae552d"
+content-hash = "d64f4d5ed8a8ea001364f905fe4a7693799dde1b9a01a7af08a0257dabb83792"
