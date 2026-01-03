@@ -1,15 +1,14 @@
 # perceval-zulip
+
 [![Build Status](https://github.com/vchrombie/grimoirelab-perceval-zulip/workflows/tests/badge.svg)](https://github.com/vchrombie/grimoirelab-perceval-zulip/actions?query=workflow:tests+branch:master+event:push) [![Coverage Status](https://img.shields.io/coveralls/vchrombie/grimoirelab-perceval-zulip.svg)](https://coveralls.io/r/vchrombie/grimoirelab-perceval-zulip?branch=master) [![PyPI version](https://badge.fury.io/py/perceval-zulip.svg)](https://badge.fury.io/py/perceval-zulip)
 
 Perceval backend for Zulip.
 
-
 ## Requirements
 
-* Python >= 3.8
-* python3-requests >= 2.7
-* grimoirelab-toolkit >= 0.3, <1.1
-* perceval >= 1.0.2, <1.1
+- Python >= 3.10
+
+You will also need some other libraries for running the tool, you can find the whole list of dependencies in [pyproject.toml](pyproject.toml) file.
 
 ## Prerequisites
 
@@ -18,7 +17,6 @@ Perceval backend for Zulip.
 We use [Poetry](https://python-poetry.org/docs/) for managing the project.
 You can install it following [these steps](https://python-poetry.org/docs/#installation).
 
-
 ## Installation
 
 ### 1. PyPI
@@ -26,6 +24,7 @@ You can install it following [these steps](https://python-poetry.org/docs/#insta
 Perceval Zulip backend can be installed using [pip](https://pip.pypa.io/en/stable/)
 
 It is advised to use a [virtual environment](https://docs.python.org/3/tutorial/venv.html)
+
 ```
 (.venv) $ pip install perceval-zulip
 ```
@@ -33,21 +32,23 @@ It is advised to use a [virtual environment](https://docs.python.org/3/tutorial/
 ### 2. Getting the source code
 
 Clone the repository
+
 ```
 $ git clone https://github.com/vchrombie/grimoirelab-perceval-zulip perceval-zulip
 $ cd perceval-zulip
 ```
 
 Install the required dependencies (this will also create a virtual environment)
+
 ```
 $ poetry install
 ```
 
 Activate the virtual environment
+
 ```
 $ poetry shell
 ```
-
 
 ## Usage
 
@@ -55,6 +56,7 @@ $ poetry shell
 for authentication or create a bot and use the bot email and API key.
 
 Reference: [About bots (Zulip Help Center)](https://zulip.com/help/bots-and-integrations).
+
 ```
 (.venv) $ perceval zulip --help
 [2021-09-20 15:57:22,523] - Sir Perceval is on his quest.
@@ -82,6 +84,7 @@ zulip arguments:
 
 Fetch messages from the `importlib` stream of the [Python Zulip Server](https://python.zulipchat.com) with the
 bot email `bot@zulipchat.com` and API key `xxxx`
+
 ```
 (.venv) $ perceval zulip https://python.zulipchat.com importlib -e bot@zulipchat.com -t xxxx
 [2021-09-20 15:59:24,593] - Sir Perceval is on his quest.
@@ -89,21 +92,18 @@ bot email `bot@zulipchat.com` and API key `xxxx`
 ...
 ```
 
-
 ## Contributing
 
 This project follows the [contributing guidelines](https://github.com/chaoss/grimoirelab/blob/master/CONTRIBUTING.md)
 of the GrimoireLab.
-
 
 ## Acknowledgment
 
 The backend was initially developed by [@vchrombie](https://github.com/vchrombie).
 
 Adhering to the guidelines, the work is started in this external repository. But, this can be merged
-([chaoss/grimoirelab-perceval/#/667](https://github.com/chaoss/grimoirelab-perceval/pull/667)) into the 
+([chaoss/grimoirelab-perceval/#/667](https://github.com/chaoss/grimoirelab-perceval/pull/667)) into the
 [Perceval](https://github.com/chaoss/grimoirelab-perceval) repository in the future.
-
 
 ## License
 
