@@ -41,7 +41,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          poetry run coverage run tests/run_tests.py
+          cd tests
+          poetry run coverage run --source=perceval.backends.zulip run_tests.py
           poetry run coverage report -m
       - name: Coveralls
         uses: coverallsapp/github-action@643bc377ffa44ace6394b2b5d0d3950076de9f63 # v2.3.0
