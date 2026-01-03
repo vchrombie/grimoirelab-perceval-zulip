@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
 
     name: Python ${{ matrix.python-version }}
     steps:
@@ -31,6 +31,9 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install -vvv
+          poetry run pip install \
+            -e git+https://github.com/chaoss/grimoirelab-toolkit.git/#egg=grimoirelab-toolkit \
+            -e git+https://github.com/chaoss/grimoirelab-perceval.git/#egg=perceval
       - name: Lint with flake8
         run: |
           poetry run flake8
@@ -38,7 +41,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          poetry run coverage run tests/run_tests.py
+          cd tests
+          poetry run coverage run --source=perceval.backends.zulip run_tests.py
           poetry run coverage report -m
       - name: Coveralls
         uses: coverallsapp/github-action@643bc377ffa44ace6394b2b5d0d3950076de9f63 # v2.3.0
