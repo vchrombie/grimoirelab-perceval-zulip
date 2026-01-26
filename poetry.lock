@@ -593,14 +593,14 @@ files = [
 
 [[package]]
 name = "perceval"
-version = "1.4.4"
+version = "1.4.5"
 description = "Send Sir Perceval on a quest to fetch and gather data from software repositories."
 optional = false
 python-versions = "<4.0,>=3.10"
 groups = ["main"]
 files = [
-    {file = "perceval-1.4.4-py3-none-any.whl", hash = "sha256:cd09be7d8055c45bf7592d0404315f6be12b184c94bb0523bd9d93b5e0d50be0"},
-    {file = "perceval-1.4.4.tar.gz", hash = "sha256:472f1f68c2828f30646537f4974105c5600181a282ff1bfb92594f280d61d03b"},
+    {file = "perceval-1.4.5-py3-none-any.whl", hash = "sha256:12d2a9cd615447fea0ae8aa5b01597130009a2f4397a02fd99e4735cda141e3a"},
+    {file = "perceval-1.4.5.tar.gz", hash = "sha256:09256f65bbba90196e63b20e3ba2a56e6209e041eaf7f9d9174006af320fbc52"},
 ]
 
 [package.dependencies]
@@ -614,7 +614,7 @@ requests = ">=2.7.0,<3.0.0"
 urllib3 = ">=2.2,<3.0"
 
 [package.extras]
-docs = ["furo (>=2023.03.27,<2024.0.0)", "myst-parser (>=1.0.0,<2.0.0)"]
+docs = ["furo (>=2023.3.27,<2024.0.0)", "myst-parser (>=1.0.0,<2.0.0)"]
 
 [[package]]
 name = "pycodestyle"
